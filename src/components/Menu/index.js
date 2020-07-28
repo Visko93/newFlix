@@ -1,20 +1,21 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import './index.css'
 import ButtonNavLink from "../ButtonLink/ButtonNavLink";
 
 import logo from "../../images/logo.png";
 
-export default function NavButton () {
+export default function Menu () {
   
   return(
     <header className="Menu">
       <span className="Logo">
-        <a href="/">
-          <img src={logo} alt="companie logo" height={60}/>
-        </a>
+        <NavLink to="/">
+          <img src={logo} alt="company logo" height={50}/>
+        </NavLink>
       </span>
-      <ButtonNavLink href="/" >
+      <ButtonNavLink to="/" className="ButtonLink">
         Novo vídeo
       </ButtonNavLink>
     </header>

@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+}
+
+
+.backImage {
+  position: absolute;
+  top: 10em;
+  opacity: .1;
+}
+
+.container > h1 {
+  font-size: 100px;
+  font-family: inherit;
+  margin: 3em auto 0 auto;
+}

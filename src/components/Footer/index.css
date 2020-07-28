@@ -1,0 +1,24 @@
+.container {
+  width: 100vw;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  font-size: 16px;
+  background-color: #000000;
+  border-top: 1px solid #6BD1FF;
+  padding: 0 2em 0 0;
+  transition: ease-out .6s;
+}
+
+.container > p {
+  width: 26em;
+}
+
+.container a:hover {
+  position: unset;
+  opacity: .5;
+  font-size: 17px;
+  color: #6BD1FF;
+}

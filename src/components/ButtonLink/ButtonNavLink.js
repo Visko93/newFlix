@@ -1,11 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-export default function NavButton ({href, children,}) {
+export default function NavButton ({to, children, className}) {
   
   return(
 
-      <button className="ButtonLink">
-        <a href={href}>{children}</a>
+      <button className={className}>
+          <NavLink to={to}>{children}</NavLink>
       </button>    
 
   );

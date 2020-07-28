@@ -2,11 +2,11 @@ import React from "react";
 
 import './index.css'
 
-export default function Home () {
+export default function MovieList () {
 
   return (
     <div>
-      <h1>Home</h1>
+      <h1>List</h1>
     </div>
   );
 }

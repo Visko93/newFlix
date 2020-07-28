@@ -1,16 +1,18 @@
 import React from 'react';
 import { Route, Switch  } from "react-router-dom";
 
-import Menu from "./components/Menu";
 import Home from "./pages/Home";
+import Details from "./pages/Details";
+import ErrorPage from "./pages/ErrorPage";
 
 import './App.css';
 
 function Routes() {
   return (
       <Switch>
-        <Menu />
         <Route exact path={"/"} component={Home} />
+        <Route exact path={"/details"} component={Details} />
+        <Route component={ErrorPage} />
       </Switch>
   );
 }
